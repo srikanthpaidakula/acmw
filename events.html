@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meetings & Events - ACM-W Chapter - SR University</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="sticky-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          <img src="https://i.imgur.com/yk59AhQ.png" alt="ACM-W Logo" class="logo-image">
+        </div>
+        <span class="logo-text">SR UNIVERSITY ACM-W CHAPTER</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="events.html" class="nav-link">Meetings & Events</a>
+        <a href="volunteers.html" class="nav-link">Volunteers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="primary-button rounded-button">Join Us</button>
+      </nav>
+
+      <!-- Mobile Navigation Toggle -->
+      <button class="mobile-menu-button" id="mobile-menu-toggle" aria-label="Open menu">
+        <i data-lucide="menu" class="icon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-nav-container">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="team.html" class="mobile-nav-link">Team</a>
+        <a href="events.html" class="mobile-nav-link">Meetings & Events</a>
+        <a href="volunteers.html" class="mobile-nav-link">Volunteers</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <button class="primary-button rounded-button full-width">Join Us</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="page-title">Meetings & Events</h1>
+          <p class="page-description">
+            Stay up to date with our chapter's meetings, workshops, tech talks, and networking events.
+          </p>
+        </div>
+
+        <div class="tabs">
+          <div class="tabs-list">
+            <button class="tab-button active" data-tab="upcoming">Upcoming Events</button>
+            <button class="tab-button" data-tab="past">Past Events</button>
+          </div>
+
+          <div class="tab-content active" id="upcoming-tab">
+            <div class="upcoming-events-placeholder">
+              <h3 class="upcoming-title">Upcoming Events Will Be Updated Soon</h3>
+              <p class="upcoming-description">
+                We're currently planning exciting new events for our members. Check back soon for updates on
+                workshops, tech talks, and networking opportunities.
+              </p>
+              <div class="event-buttons">
+                <a href="contact.html" class="primary-button">
+                  Contact Us for Event Information
+                </a>
+                <a href="volunteers.html" class="outline-button">
+                  Become a Member
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="past-tab">
+            <div class="events-grid">
+              <!-- Event 1 -->
+              <div class="event-card">
+                <div class="event-card-content">
+                  <h3 class="event-title">ACM-W WOMENS DAY CELEBRATIONS: Navigating Tech: Insights from a Google SWE</h3>
+                  <div class="event-details">
+                    <div class="event-detail">
+                      <i data-lucide="calendar" class="event-detail-icon"></i>
+                      <span>MARCH 10, 2025</span>
+                    </div>
+                    <div class="event-detail">
+                      <i data-lucide="clock" class="event-detail-icon"></i>
+                      <span>9:00 AM - 1:00 PM</span>
+                    </div>
+                    <div class="event-detail">
+                      <i data-lucide="map-pin" class="event-detail-icon"></i>
+                      <span>ECE FARADAY HALL</span>
+                    </div>
+                  </div>
+                  <p class="event-description">
+                    A special event celebrating Women's Day with insights from a Google Software Engineer about navigating the tech industry.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Event 2 -->
+              <div class="event-card">
+                <div class="event-card-content">
+                  <h3 class="event-title">Career Pathways and Resume Mastery Collaboration with Github community</h3>
+                  <div class="event-details">
+                    <div class="event-detail">
+                      <i data-lucide="calendar" class="event-detail-icon"></i>
+                      <span>JAN 17, 2025</span>
+                    </div>
+                    <div class="event-detail">
+                      <i data-lucide="clock" class="event-detail-icon"></i>
+                      <span>7:00 PM - 8:30 PM</span>
+                    </div>
+                    <div class="event-detail">
+                      <i data-lucide="map-pin" class="event-detail-icon"></i>
+                      <span>GOOGLE MEET</span>
+                    </div>
+                  </div>
+                  <p class="event-description">
+                    An interactive session on career growth strategies and resume optimization with the GitHub community.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Event 3 -->
+              <div class="event-card">
+                <div class="event-card-content">
+                  <h3 class="event-title">Inaugural: Tech and industry talk With Apoorva Upallappu program manager at Microsoft</h3>
+                  <div class="event-details">
+                    <div class="event-detail">
+                      <i data-lucide="calendar" class="event-detail-icon"></i>
+                      <span>OCTOBER 23, 2024</span>
+                    </div>
+                    <div class="event-detail">
+                      <i data-lucide="clock" class="event-detail-icon"></i>
+                      <span>9:00 AM - 1:00 PM</span>
+                    </div>
+                    <div class="event-detail">
+                      <i data-lucide="map-pin" class="event-detail-icon"></i>
+                      <span>ECE FARADAY HALL</span>
+                    </div>
+                  </div>
+                  <p class="event-description">
+                    An insightful talk by Apoorva Upallappu, Program Manager at Microsoft, on tech and industry trends.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3 class="footer-title">ACM-W Chapter</h3>
+          <p class="footer-text">
+            Empowering women in computing through community, education, and professional development.
+          </p>
+          <div class="footer-social">
+            <a href="https://github.com" class="footer-social-link">
+              <i data-lucide="github" class="footer-social-icon"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
+            <a href="https://instagram.com" class="footer-social-link">
+              <i data-lucide="instagram" class="footer-social-icon"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="team.html" class="footer-link">Our Team</a>
+            </li>
+            <li>
+              <a href="events.html" class="footer-link">Meetings & Events</a>
+            </li>
+            <li>
+              <a href="volunteers.html" class="footer-link">Volunteer</a>
+            </li>
+            <li>
+              <a href="contact.html" class="footer-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Contact Us</h3>
+          <address class="footer-address">
+            <p>Computer Science Department</p>
+            <p>SR UNIVERSITY</p>
+            <p>TELANGANA, HANAMKONDA 506001</p>
+            <p class="footer-email">
+              Email:
+              <a href="mailto:acmc@sru.edu.in" class="footer-email-link">
+                acmc@sru.edu.in
+              </a>
+            </p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="current-year"></span> ACM-W Chapter. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = mobileMenuToggle.querySelector('[data-lucide="menu"]');
+      
+      let isOpen = false;
+
+      mobileMenuToggle.addEventListener('click', function() {
+        isOpen = !isOpen;
+        
+        if (isOpen) {
+          mobileMenu.classList.add('open');
+          menuIcon.setAttribute('name', 'x');
+          mobileMenuToggle.setAttribute('aria-label', 'Close menu');
+        } else {
+          mobileMenu.classList.remove('open');
+          menuIcon.setAttribute('name', 'menu');
+          mobileMenuToggle.setAttribute('aria-label', 'Open menu');
+        }
+      });
+
+      // Tabs functionality
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons and contents
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+
+          // Add active class to clicked button and corresponding content
+          button.classList.add('active');
+          const tabId = button.getAttribute('data-tab');
+          document.getElementById(`${tabId}-tab`).classList.add('active');
+        });
+      });
+
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

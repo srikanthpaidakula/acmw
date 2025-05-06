@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - ACM-W Chapter - SR University</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="sticky-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          <img src="https://i.imgur.com/yk59AhQ.png" alt="ACM-W Logo" class="logo-image">
+        </div>
+        <span class="logo-text">SR UNIVERSITY ACM-W CHAPTER</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="events.html" class="nav-link">Meetings & Events</a>
+        <a href="volunteers.html" class="nav-link">Volunteers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="primary-button rounded-button">Join Us</button>
+      </nav>
+
+      <!-- Mobile Navigation Toggle -->
+      <button class="mobile-menu-button" id="mobile-menu-toggle" aria-label="Open menu">
+        <i data-lucide="menu" class="icon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-nav-container">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="team.html" class="mobile-nav-link">Team</a>
+        <a href="events.html" class="mobile-nav-link">Meetings & Events</a>
+        <a href="volunteers.html" class="mobile-nav-link">Volunteers</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <button class="primary-button rounded-button full-width">Join Us</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="page-title">Contact Us</h1>
+          <p class="page-description">
+            Have questions or want to get involved? Reach out to our ACM-W Chapter team.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-form-card">
+            <div class="contact-form-content">
+              <h2 class="contact-section-title">Send Us a Message</h2>
+
+              <div id="success-message" class="success-message hidden">
+                Thank you for your message! We'll get back to you soon.
+              </div>
+
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" id="name" name="name" required class="form-input">
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" id="email" name="email" required class="form-input">
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" id="subject" name="subject" required class="form-input">
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" required rows="5" class="form-textarea"></textarea>
+                </div>
+
+                <button type="submit" id="submit-button" class="primary-button full-width">
+                  <i data-lucide="send" class="button-icon-left"></i>
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="contact-info-container">
+            <div class="contact-info-card">
+              <div class="contact-info-content">
+                <h2 class="contact-section-title">Contact Information</h2>
+
+                <div class="contact-info-items">
+                  <div class="contact-info-item">
+                    <i data-lucide="map-pin" class="contact-info-icon"></i>
+                    <div>
+                      <h3 class="contact-info-title">Address</h3>
+                      <p class="contact-info-text">
+                        Computer Science Department<br>
+                        SR UNIVERSITY<br>
+                        HANAMAKONDA, TELANGANA, 506001
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <i data-lucide="mail" class="contact-info-icon"></i>
+                    <div>
+                      <h3 class="contact-info-title">Email</h3>
+                      <p class="contact-info-text">
+                        <a href="mailto:acmc@sru.edu.in" class="contact-info-link">
+                          acmc@sru.edu.in
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <i data-lucide="phone" class="contact-info-icon"></i>
+                    <div>
+                      <h3 class="contact-info-title">Phone</h3>
+                      <p class="contact-info-text">
+                        <a href="tel:+11234567890" class="contact-info-link">
+                          (123) 456-7890
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="office-hours-card">
+              <div class="office-hours-content">
+                <h2 class="contact-section-title">Office Hours</h2>
+
+                <div class="office-hours-items">
+                  <div class="office-hours-item">
+                    <span class="office-day">Monday - Friday</span>
+                    <span class="office-time">10:00 AM - 4:00 PM</span>
+                  </div>
+                  <div class="office-hours-item">
+                    <span class="office-day">Saturday</span>
+                    <span class="office-time">By Appointment</span>
+                  </div>
+                  <div class="office-hours-item">
+                    <span class="office-day">Sunday</span>
+                    <span class="office-time">Closed</span>
+                  </div>
+                </div>
+
+                <div class="office-note">
+                  <p>
+                    Our office is located in the Computer Science Building, Room 305. Feel free to stop by during
+                    office hours!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3 class="footer-title">ACM-W Chapter</h3>
+          <p class="footer-text">
+            Empowering women in computing through community, education, and professional development.
+          </p>
+          <div class="footer-social">
+            <a href="https://github.com" class="footer-social-link">
+              <i data-lucide="github" class="footer-social-icon"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
+            <a href="https://instagram.com" class="footer-social-link">
+              <i data-lucide="instagram" class="footer-social-icon"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="team.html" class="footer-link">Our Team</a>
+            </li>
+            <li>
+              <a href="events.html" class="footer-link">Meetings & Events</a>
+            </li>
+            <li>
+              <a href="volunteers.html" class="footer-link">Volunteer</a>
+            </li>
+            <li>
+              <a href="contact.html" class="footer-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Contact Us</h3>
+          <address class="footer-address">
+            <p>Computer Science Department</p>
+            <p>SR UNIVERSITY</p>
+            <p>TELANGANA, HANAMKONDA 506001</p>
+            <p class="footer-email">
+              Email:
+              <a href="mailto:acmc@sru.edu.in" class="footer-email-link">
+                acmc@sru.edu.in
+              </a>
+            </p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="current-year"></span> ACM-W Chapter. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = mobileMenuToggle.querySelector('[data-lucide="menu"]');
+      
+      let isOpen = false;
+
+      mobileMenuToggle.addEventListener('click', function() {
+        isOpen = !isOpen;
+        
+        if (isOpen) {
+          mobileMenu.classList.add('open');
+          menuIcon.setAttribute('name', 'x');
+          mobileMenuToggle.setAttribute('aria-label', 'Close menu');
+        } else {
+          mobileMenu.classList.remove('open');
+          menuIcon.setAttribute('name', 'menu');
+          mobileMenuToggle.setAttribute('aria-label', 'Open menu');
+        }
+      });
+
+      // Form submission
+      const form = document.getElementById('contact-form');
+      const submitButton = document.getElementById('submit-button');
+      const successMessage = document.getElementById('success-message');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Simulate form submission
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg> Sending...';
+        
+        setTimeout(function() {
+          form.reset();
+          submitButton.disabled = false;
+          submitButton.innerHTML = '<i data-lucide="send" class="button-icon-left"></i> Send Message';
+          successMessage.classList.remove('hidden');
+          lucide.createIcons();
+          
+          // Hide success message after 5 seconds
+          setTimeout(function() {
+            successMessage.classList.add('hidden');
+          }, 5000);
+        }, 1500);
+      });
+
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
