@@ -64,11 +64,7 @@ Proudly built for the **ACM-W Chapter at SR University**.
 
 ---
 
-## 📄 License
 
-This project is open-sourced under the [MIT License](LICENSE).
-
----
 
 > *“Empowering Women in Computing – One Web Page at a Time.”*
 
